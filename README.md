@@ -31,15 +31,15 @@ Start the container with ENABLE_REGISTER=false or edit settings.php in your fsyn
 # Environment variables
 **DBTYPE**=[**sqlite**|mysql]
 
-**DBHOST** the hostname of your database (container). default: db
+**DBHOST**=**db**
 
-**DBNAME** default: fsyncms
+**DBNAME**=**fsyncms**
 
-**DBUSER** default: fsyncms
+**DBUSER**=**fsyncms**
 
-**DBPASS** this is set for easier testing. change it. default: snakeoil
+**DBPASS**=**snakeoil** this is set for easier testing. change it.
 
-**ENABLE_REGISTER** default: true
+**ENABLE_REGISTER**=[**true**|false]
 
 # TODO
 * limit access to settings.php
