@@ -8,7 +8,7 @@ RUN \
     docker-php-ext-install pdo pdo_mysql && \
     tar xf /tmp/*.tar.gz -C /tmp && \
     rm /tmp/*.tar.gz && \
-    mv /tmp/FSyncMS-${COMMIT}/*.php /var/www/html/
+    mv /tmp/FSyncMS-${VERSION}/*.php /var/www/html/
 
 ENV DBTYPE=sqlite
 ENV DBHOST=db
