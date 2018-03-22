@@ -1,10 +1,8 @@
 FROM php:apache
 LABEL maintainer="https://github.com/h3po"
 
-#presumably the commit that is v013b (@computersalat updated the readme)
-ARG COMMIT=3d368459e0ce829eb74d7e311d5a196004996ade
-
-ADD https://github.com/MoonchildProductions/FSyncMS/archive/${COMMIT}.tar.gz /tmp
+ARG VERSION=0.14.0
+ADD https://github.com/MoonchildProductions/FSyncMS/archive/${VERSION}.tar.gz /tmp
 
 RUN \
     docker-php-ext-install pdo pdo_mysql && \
